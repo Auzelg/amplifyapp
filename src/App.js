@@ -2,6 +2,7 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { withAuthenticator, AmplifySignOut } from "@aws-amplify/ui-react";
+import Notes from "./Notes";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         </a>
         <h1>We now have Auth!</h1>
       </header>
+      <Notes />
       <AmplifySignOut />
     </div>
   );
